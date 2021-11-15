@@ -29,15 +29,6 @@ def check_ans(question, ans, attempts, score):
         return False
 
 
-def print_dictionary():
-    for question_id, ques_answer in quiz.items():
-        for key in ques_answer:
-            print(key + ':', ques_answer[key])
-        else:
-            print(f"Wrong Answer :( \nYou have {attempts - 1} left! \nTry again...")
-            return False
-
-
 def intro_message():
     """
     Introduces user to the quiz and rules, and takes an input from customer to start the quiz.
